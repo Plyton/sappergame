@@ -1,0 +1,137 @@
+:focus {
+    outline: blue;
+}
+
+body {
+    background-image: url(img/screen-6.jpg);
+}
+
+span {
+    color: red;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    font-family: monospace;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.table-wrp {
+    border: 5px solid forestgreen;
+    border-radius: 3%;
+    padding: 10px;
+    background-color: darkslategray;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    border: 5px solid forestgreen;
+}
+
+.menu__window {
+    background-color: #000000;
+    width: 80px;
+}
+
+button {
+    width: 70px;
+    background-image: url(img/smyle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0 2px 4px 1px black;
+    border: none;
+    background-color: forestgreen;
+}
+
+#parameters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: lightyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.parameters__text {
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+table {
+    border-spacing: 2px;
+    table-layout: fixed;
+    border: 5px solid forestgreen;
+    border-top: none;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+    border: 3px solid darkgray;
+    color: darkblue;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: fantasy;
+    text-align: center;
+    background-color: gray;
+}
+
+.td--bomb {
+    background-image: url(img/bomb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: red;
+}
+
+.td--background {
+    background-color: darkgray;
+}
+
+.td--image {
+    background-image: url(img/flag.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button--image-lost {
+    background-image: url(img/smyle2.png);
+}
+
+.button--image-win {
+    background-image: url(img/smyle3.png);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: rgb(39, 131, 39);
+    cursor: pointer;
+}
+
+label:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+label:active {
+    color: lightyellow;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}

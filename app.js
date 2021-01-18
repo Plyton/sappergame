@@ -215,6 +215,7 @@ class Game {
         this.status = status;
         this.bomb = bomb;
         this.menu = menu;
+        this.headerEl = document.querySelector('.header')
         this.inputParameters = document.querySelectorAll('.parameters__input');
         this.tickIdentifier = null;
         this.x = null;
@@ -231,6 +232,9 @@ class Game {
     selectGameOptions() {
         this.inputParameters.forEach(inputEl => {
             inputEl.addEventListener('change', (event) => {
+                if (innerWidth < 576) {
+                    this.headerEl.classList.add('header--display');
+                }
                 if (event.target.value == 'easy') {
                     this.settings.rowCount = 10;
                     this.settings.colCount = 10;
@@ -241,11 +245,18 @@ class Game {
                     this.settings.colCount = 16;
                     this.settings.bomb = 40;
                 }
-                if (event.target.value == 'hard') {
+                if (innerWidth < 576 && event.target.value == 'hard') {
+                    this.settings.rowCount = 25;
+                    this.settings.colCount = 16;
+                    this.settings.bomb = 99;
+                }
+
+                if (innerWidth > 576 && event.target.value == 'hard') {
                     this.settings.rowCount = 16;
                     this.settings.colCount = 30;
                     this.settings.bomb = 99;
                 }
+
                 if (event.target.checked) {
                     this.board.clearParameterSelection();
                     this.board.renderBoard();

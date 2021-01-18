@@ -5,12 +5,16 @@
 body {
     background-image: url(img/screen-6.jpg);
     background-size: cover;
+    margin: 0;
+    padding: 0;
+   
 }
 
 @media (max-width: 720px) {
     body {
         background-image: url(img/screen-7.jpg);
         background-size: cover;
+       
     }
 }
 

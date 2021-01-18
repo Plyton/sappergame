@@ -7,7 +7,7 @@ body {
     background-size: cover;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
     body {
         background-image: url(img/screen-7.jpg);
         background-size: cover;
@@ -22,7 +22,7 @@ span {
     font-family: monospace;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
     span {
         font-size: 25px;
     }
@@ -32,7 +32,7 @@ span {
     display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
     .header {
         display: block;
         position: absolute;
@@ -54,7 +54,7 @@ span {
     min-width: 360px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
     .container {
         width: 100%;
         margin: 0 auto;
@@ -86,7 +86,7 @@ span {
     width: 80px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
     .menu__window {
         width: 50px;
     }
@@ -103,7 +103,7 @@ button {
     background-color: forestgreen;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
     button {
         width: 40px;
     }
@@ -119,7 +119,7 @@ button {
     font-size: 16px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
     #parameters {
         font-size: 14px;
     }
@@ -150,7 +150,7 @@ td {
     background-color: gray;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
     td {
         width: 10px;
         height: 10px;

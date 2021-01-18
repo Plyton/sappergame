@@ -22,6 +22,12 @@ span {
     font-family: monospace;
 }
 
+@media (max-width: 576px) {
+    span {
+        font-size: 25px;
+    }
+}
+
 .header {
     display: none;
 }
@@ -30,14 +36,13 @@ span {
     .header {
         display: block;
         position: absolute;
-        top: 0%;
+        bottom: 70%;
         font-size: 43px;
         text-transform: uppercase;
-        font-family: cursive;
+        font-family: fantasy;
         color: yellow;
     }
 }
-
 
 .container {
     width: 1280px;
@@ -46,7 +51,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 555px;
+    min-width: 360px;
 }
 
 @media (max-width: 576px) {
@@ -81,6 +86,12 @@ span {
     width: 80px;
 }
 
+@media (max-width: 576px) {
+    .menu__window {
+        width: 50px;
+    }
+}
+
 button {
     width: 70px;
     background-image: url(img/smyle.png);
@@ -92,6 +103,12 @@ button {
     background-color: forestgreen;
 }
 
+@media (max-width: 576px) {
+    button {
+        width: 40px;
+    }
+}
+
 #parameters {
     display: flex;
     flex-direction: column;
@@ -100,6 +117,12 @@ button {
     color: lightyellow;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+}
+
+@media (max-width: 576px) {
+    #parameters {
+        font-size: 14px;
+    }
 }
 
 .parameters__text {
@@ -114,6 +137,7 @@ table {
     border-top: none;
 }
 
+
 td {
     width: 20px;
     height: 20px;
@@ -124,6 +148,15 @@ td {
     font-family: fantasy;
     text-align: center;
     background-color: gray;
+}
+
+@media (max-width: 576px) {
+    td {
+        width: 10px;
+        height: 10px;
+        font-size: 8px;
+
+    }
 }
 
 .td--bomb {

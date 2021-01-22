@@ -232,7 +232,7 @@ class Game {
     selectGameOptions() {
         this.inputParameters.forEach(inputEl => {
             inputEl.addEventListener('change', (event) => {
-                if (innerWidth < 576) {
+                if (innerWidth < 720) {
                     this.headerEl.classList.add('header--display');
                 }
                 if (event.target.value == 'easy') {
@@ -245,13 +245,13 @@ class Game {
                     this.settings.colCount = 16;
                     this.settings.bomb = 40;
                 }
-                if (innerWidth < 576 && event.target.value == 'hard') {
-                    this.settings.rowCount = 25;
+                if (innerWidth < 720 && event.target.value == 'hard') {
+                    this.settings.rowCount = 23;
                     this.settings.colCount = 16;
                     this.settings.bomb = 99;
                 }
 
-                if (innerWidth > 576 && event.target.value == 'hard') {
+                if (innerWidth > 720 && event.target.value == 'hard') {
                     this.settings.rowCount = 16;
                     this.settings.colCount = 30;
                     this.settings.bomb = 99;
